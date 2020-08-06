@@ -3,11 +3,10 @@ class Author
   
   def initialize(name)
     @name = name
-    @posts = []
   end
   
   def posts
-    @posts << Post.all.select {|post|post.author == self}.flatten
+    self.posts = Post.all.select {|post|post.author == self}.flatten
     #binding.pry
   end
   
