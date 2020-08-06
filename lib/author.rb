@@ -7,8 +7,8 @@ class Author
   end
   
   def posts
-    self.posts = Post.all.select{|single_post|single_post.author == self}
     binding.pry
+    self.posts = Post.all.select{|single_post|single_post.author == self}
   end
   
   def add_post
