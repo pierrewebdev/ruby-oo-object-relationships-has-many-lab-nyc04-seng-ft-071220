@@ -27,7 +27,7 @@ class Author
     total = 0
     @@all.each {|author|total += author.posts.length}
     total
-    binding.pry
+    #binding.pry
   end
   
   
