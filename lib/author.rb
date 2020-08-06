@@ -3,6 +3,7 @@ class Author
   
   def initialize(name)
     @name = name
+    @songs = nil
   end
   
   def posts
