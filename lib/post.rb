@@ -5,6 +5,8 @@ class Post
   #class variable
   @@all = []
   
+  attr_accessor :title, :author
+  
   def initialize(title,author = nil)
     @title = title
     @author = author
