@@ -7,7 +7,7 @@ class Author
   end
   
   def posts
-    @posts << Post.all.select {|post|post.author == self}
+    @posts << Post.all.select {|post|post.author == self}.flatten
     binding.pry
   end
   
