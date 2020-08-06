@@ -6,7 +6,7 @@ class Author
   end
   
   def posts
-    self.posts = Post.all.select {|post|post.author == self}.flatten
+    self.posts = Post.all.select {|post|post.author == self}
     #binding.pry
   end
   
