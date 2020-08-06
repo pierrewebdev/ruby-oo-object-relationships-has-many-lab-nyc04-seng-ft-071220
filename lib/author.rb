@@ -3,12 +3,12 @@ class Author
   
   def initialize(name)
     @name = name
-    @posts = nil
+    @posts = []
   end
   
   def posts
     #binding.pry
-    self.posts = Post.all.select{|single_post|single_post.author == self}
+    self.posts << Post.all.select{|single_post|single_post.author == self}.flatten
   end
   
   def add_post
