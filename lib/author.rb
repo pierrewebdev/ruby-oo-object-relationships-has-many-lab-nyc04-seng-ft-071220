@@ -12,7 +12,7 @@ class Author
   
   def add_post(new_post)
     new_post = Post.new(new_post)
-    binding.pry
+    #binding.pry
     new_post.author = self
   end
   
